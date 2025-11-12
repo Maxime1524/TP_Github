@@ -5,7 +5,9 @@ from preprocess_data import preprocess_data
 import matplotlib.pyplot as plt
 
 iris = pd.read_csv("InputData/Iris.csv") #load the dataset
+
 test_size = 0.15 # Nouvelle modif Étudiant A - 15% pour test				#into 70% for train and 30% for test
+
 
 train, test = preprocess_data(iris, test_size)
 # training data features
